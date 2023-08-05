@@ -1,0 +1,24 @@
+{
+  "name": "Where in the world?",
+  "short_name": "Where?",
+  "description": "Progressive Web App.",
+  "start_url": "/fe-assignment.io/",
+  "scope": "/fe-assignment.io/",
+  "display": "standalone",
+  "theme_color": "black",
+  "background_color": "transparent",
+  "icons": [
+    {
+      "src": "app-icon_32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

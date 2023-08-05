@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+:root {
+  --roboto: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+#root {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--roboto);
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.div-search {
+  position: relative;
+  height: 40px;
+  width: 500px;
+}
+.div-search input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid black;
+}
+.div-search i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  overflow-x: scroll;
+  padding: 0 15px;
+  scrollbar-width: auto;
+  scrollbar-color: #a3a3a3 #ffffff;
+}
+/* ===== Scrollbar CSS ===== */
+/* Chrome, Edge, and Safari */
+.container::-webkit-scrollbar {
+  width: 15px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+  border-radius: 15px;
+  border: 4px solid #ffffff;
+}
+.container-list {
+  height: max-content;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 15px;
+  margin: 25px 0;
+}
+.content {
+  position: relative;
+  width: auto;
+  height: 0;
+  opacity: 0;
+  z-index: -5;
+  transition: opacity 0.2s ease-in, height 0.5s ease-in-out;
+}
+.content-visible {
+  z-index: 1;
+  height: 320px;
+  opacity: 1;
+}
+.child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.child:nth-child(1) img {
+  height: 3.7rem;
+  width: 3.7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit,
+.save-div {
+  justify-content: end;
+}
+.fa-pen {
+  color: #2a96f5;
+}
+.fa-trash-can {
+  color: #ff3232;
+}
+.edit > *,
+.save-div > * {
+  margin: 0 10px;
+  font-size: 1.3rem;
+}
+.fa-xmark:not(.dialog-close) {
+  color: #ff3232;
+  border: 1px solid #ff3232;
+  padding: 5px;
+  border-radius: 50%;
+  padding: 3px 5px;
+}
+.fa-check {
+  color: #1bc31b;
+  border: 1px solid #1bc31b;
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+.hide {
+  display: none;
+}
+.gchild .border-hide,
+.user-details .border-hide {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+.gchild {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.gchild span {
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+select {
+  padding: 5px 0;
+}
+select:disabled {
+  color: black;
+  opacity: 2;
+}
+.disable-icon {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.gchild input {
+  width: 110px;
+  padding: 5px 0 5px 10px;
+  border: 1px solid #777777;
+  border-radius: 15px;
+  outline: none;
+}
+#name {
+  font-size: 1.5rem;
+  height: 45px;
+  width: 12rem;
+  font-weight: 700;
+}
+textarea {
+  height: 150px;
+  width: 100%;
+  resize: none;
+}
+.desc {
+  line-height: 140%;
+}
+
+.confirm-box {
+  height: 0;
+  opacity: 0;
+  width: 500px;
+  z-index: -1;
+  background-color: white;
+  position: absolute;
+  transition: height 0.5 ease-in-out, opacity 0.2s ease-in-out;
+}
+.confirm-box-show {
+  height: 200px;
+  opacity: 1;
+  z-index: 5;
+}
+.confirm-box-child {
+  margin-bottom: 25px;
+}
+.confirm-box-child > h2 {
+  font-size: 1.5rem;
+}
+.confirm-box-child:nth-child(2) {
+  border: 1px solid black;
+  background-color: white;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.box-gchild:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.box-gchild:nth-child(2) {
+  display: flex;
+  justify-content: end;
+}
+.box-gchild > button {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 0 10px;
+  border: none;
+}
+.box-gchild > button:nth-child(1) {
+  background-color: white;
+  border: 1px solid gray;
+}
+.box-gchild > button:nth-child(2) {
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: white;
+}
