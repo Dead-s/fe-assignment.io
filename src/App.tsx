@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     console.log(listdata)
-    fetch("./src/data/celebrities.json")
+    fetch("https://raw.githubusercontent.com/Dead-s/fe-assignment.io/main/src/data/celebrities.json")
       .then(res => res.json())
       .then((data) => {
         setListdata(data);
