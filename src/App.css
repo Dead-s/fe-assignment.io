@@ -237,3 +237,54 @@ textarea {
   border: 1px solid orangered;
   color: white;
 }
+
+@media screen and (max-width: 750px) {
+  .div-search {
+    width: 400px;
+  }
+  .container {
+    width: 400px;
+  }
+  .confirm-box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .div-search {
+    width: 350px;
+  }
+  .container {
+    width: 350px;
+  }
+  .confirm-box {
+    width: 350px;
+  }
+  .gchild input {
+    width: 100px;
+  }
+  select {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 15px;
+  }
+  .div-search {
+    width: 300px;
+  }
+  .container {
+    width: 300px;
+  }
+  .confirm-box {
+    width: 300px;
+  }
+  #name {
+    width: 8.5rem;
+  }
+  .gchild input {
+    width: 80px;
+  }
+}
